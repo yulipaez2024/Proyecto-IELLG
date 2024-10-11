@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Color del fondo*/
+body {
+    background: #f6f7f6;
+}
+
+/*Encabezado*/
+.encabezado h1 {
+    text-align: center;
+    font-family: Abril Fatface;
+    font-size: 60px;
+    font-weight: bold;
+    color: #e49d22;
+    margin-bottom: 20px;
+}
+.container__vectore img,
+.container__vectors img{
+    display: none;
+}
+
+.encabezado {
+    background-color: #13893C;
+    padding: 50px;
+}
+
+.escudo {
+    float: left;
+    /* Permite que la imagen se posicione a la izquierda */
+    background-position: 20px 20px;
+    padding-left: 50px;
+    padding-top: 20px;
+    width: 200px;
+    height: 190px;
+    margin-top: -15em;
+    margin-left: -20px;
+    position:absolute;
+    z-index: 999;
+}
+
+.titulo a {
+    display: block;
+    font-family: Abril Fatface;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.sesion-titulo {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #13893C;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+
+/*titulo*/
+.form1 {
+    margin-top: 80px;
+    color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 60px;
+}
+
+.formtitulo {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+/*formulario de contacto*/
+
+.contact_form {
+    width: 460px;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-image: url(../images/Grade\ Grey.jpg);
+    padding-left: 50px;
+}
+
+
+input {
+    background-color: #fbfbfb;
+    width: 370px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+
+textarea {
+    background-color: #fbfbfb;
+    width: 390px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+.formulario button {
+    height: 45px;
+    width: 150px;
+    background-color: rgb(10, 116, 42);
+    color: #fff;
+    border: none;
+    padding-left: 35px;
+    padding-right: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #090447;
+    color: white;
+}
+
+#enviar {
+    display: flex;
+    margin: 0 auto;
+}
+
+
+button p {
+    color: #fff;
+    margin-top: 13px;
+    margin-left: 10px;
+}
+
+span {
+    color: #ab4493;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: letf;
+    padding-bottom: 10px;
+}
+
+
+h3 {
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #0e0e0e;
+}
+
+
+p {
+    font-size: 14px;
+    color: #0e0e0e;
+
+}
+
+
+::-webkit-input-placeholder {
+    color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+    color: #a8a8a8;
+}
+
+
+.formulario input:focus {
+    outline: 0;
+    border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus {
+    outline: 0;
+    border: 1px solid #97d848;
+}
+
+p {
+    margin-bottom: 30px;
+    /* Agrega un espacio de 30px después del párrafo */
+}
+
+
+/*AQUI COMIENZA EL FOOTER*/
+/*Pie de pagina*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: white;
+}
+
+.pie-pagina h1 {
+    text-align: justify;
+    margin-left: 70px;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pie-pagina .grupo-1 .box {
+    flex: 0 0 30%;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #13893C;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: rgb(87, 85, 85);
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+
+}
+
+.pie-pagina .grupo-1 .box p:hover,
+.pie-pagina .grupo-1 .box a:hover
+ {
+    color: #13893C;
+    font-weight: bold;
+}
+
+.pie-pagina .grupo-1 .box a {
+    color: rgb(87, 85, 85);
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.titulo-imagen {
+    width: 100px;
+    /* ajusta el tamaño según tus necesidades */
+    display: block;
+    margin: 0 auto;
+    /* centra horizontalmente la imagen */
+}
+
+
+/* Define la animación de rebote */
+@keyframes rebote {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+}
+
+.linea-horizontal {
+    border: none;
+    border-top: 1px solid rgb(20, 19, 19);
+    width: 95%;
+    margin: 20px 20px;
+
+}
+
+.footer-final {
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.footer-final a:hover {
+    color: #13893C;
+    scale: 1.1em;
+
+}
+
+.box-contactos {
+    text-decoration: none;
+    display: flex;
+    color: rgb(87, 85, 85);
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilos para pantallas más pequeñas ( móviles) */
+@media screen and (max-width: 768px) {
+    .escudo {
+        display: none;
+    }
+    .encabezado{
+        padding: 40px;
+    }
+    .encabezado h1{
+        display: none;/*oculte el titulo*/
+    }
+
+    .titulo {
+        font-size: 30px;
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        float: right;
+    }
+
+    .asistencia-logeo {
+        display: none;
+        }
+    .container__vectore img{
+        width: 35px;
+        height: auto;
+        display:block;
+        margin-left: 3%;
+        margin-top: -57px;
+        position: relative;
+    }
+    .form1 {
+        margin-top: 40px;
+    }
+
+    .select {
+        padding: 5px 5px;
+        border-radius: 20px;
+    }
+
+    .contact_form {
+        max-width: 80%;
+    }
+
+    form input {
+        max-width: 80%;
+    }
+
+    textarea {
+        max-width: 87%;
+    }
+
+    .linea-horizontal {
+        width: 90%;
+    }
+
+    .pie-pagina h1 {
+        text-align: center;
+        margin-left: 5%;
+        font-size: 16px;
+        margin-bottom: 15px;
+        padding: 2%;
+    }
+
+    .pie-pagina .grupo-1 {
+        max-width: 100%;
+        display: flex;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .pie-pagina .grupo-1 .box {
+        flex: 0 0 30%;
+        max-width: 20%;
+        max-height: 20%;
+        margin-top: -20%;
+    }
+
+    .pie-pagina .grupo-1 .box lord-icon {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .pie-pagina .grupo-1 .box h2 {
+        margin-bottom: 5px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .pie-pagina .grupo-1 .box p {
+        margin-bottom: 10px;
+    }
+
+    .footer-final {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}

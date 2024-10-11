@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Color del fondo*/
+body {
+    background: #f6f7f6;
+}
+
+/*Encabezado*/
+.encabezado h1 {
+    text-align: center;
+    font-family: Abril Fatface;
+    font-size: 60px;
+    font-weight: bold;
+    color: #e49d22;
+    margin-bottom: 20px;
+}
+
+.encabezado {
+    background-color: #13893C;
+    padding: 50px;
+}
+
+.escudo {
+    float: left;
+    /* Permite que la imagen se posicione a la izquierda */
+    background-position: 20px 20px;
+    padding-left: 50px;
+    padding-top: 20px;
+    width: 200px;
+    height: 190px;
+    margin-top: -15em;
+    margin-left: -20px;
+    position:absolute;
+    z-index: 999;
+}
+
+.titulo a {
+    display: block;
+    font-family: Abril Fatface;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+
+.sesion-titulo {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #13893C;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+/*RECTOR*/
+.rector .columnas-rector {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagen-rector {
+    width: 40%;
+}
+
+.imagen-rector img {
+    width: 50%;
+    height: auto;
+    border-radius: 260px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.centrar-texto h2,
+.centrar-texto h3 {
+    text-align: center;
+    /* Esto centrará horizontalmente el texto */
+}
+
+.texto-rector {
+    width: 60%;
+}
+
+.texto-rector p {
+    padding: 30px;
+}
+
+/*HISTORIA*/
+.historia-institucion {
+    display: block;
+}
+
+.imagen-historia img {
+    width: 50%;
+    display: flex;
+    margin: 20px auto;
+}
+
+.texto-historia p {
+    margin: 0 60px;
+    font-size: 16px;
+}
+
+/*VALOReS*/
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.valores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    width: 1100px;
+    margin-left: 10em;
+}
+
+.valores .card {
+    position: relative;
+    width: 360px;
+    height: 320px;
+    margin: 30px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: 1s ease;
+    box-shadow: 10px 10px 40px rgba(37, 50, 116, 0.8);
+}
+
+.valores .card .box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+}
+
+.valores .card:hover .box {
+    transform: rotateY(180deg);
+}
+
+.valores .card .box .imgBx img {
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 320px;
+    display: block;
+}
+
+.valores .card .box .imgBx {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+
+.imgBx h2 {
+    background-color: rgba(162, 170, 167, 0.7);
+    position: absolute;
+    /* Posiciona el encabezado dentro del contenedor */
+    top: 50%;
+    /* Lo coloca en el centro vertical */
+    left: 50%;
+    /* Lo coloca en el centro horizontal */
+    transform: translate(-50%, -50%);
+    /* Centra el contenido real ajustando su posición */
+    font-weight: bold;
+    /* Establece la negrilla */
+}
+
+.valores .card .box .contentBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.valores .card .box .contentBx div {
+    transform-style: preserve-3d;
+    padding: 20px;
+    background-image: url(../images/background.jpg);
+    transform: translateZ(100px);
+}
+
+.valores .card .box .contentBx div p {
+    color: rgb(9, 68, 70);
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    position: relative;
+}
+
+/*HIMNO*/
+.himno {
+    display: block;
+}
+
+.titulo h2 {
+    text-align: center;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columnas h6 {
+    margin-left: 5em;
+    font-weight: bold;
+}
+
+.columna {
+    flex: 0 0 30%;
+    /* Ancho de las columnas */
+    padding: 0 20px;
+    /* Espacio entre las columnas */
+    text-align: left;
+    /* Alineación del texto en las columnas */
+}
+
+.imagen-himno img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 70px;
+}
+
+.autor-himno p {
+    text-align: right;
+    font-weight: bold;
+}
+
+
+
+
+/*MISION Y VISION*/
+
+.mision-vision {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.imagen-vision img,
+.imagen-mision img {
+    width: 30%;
+    height: auto;
+    display: flex;
+    margin: 10px auto;
+}
+
+.imagen-vision,
+.imagen-mision {
+    text-align: center;
+}
+
+.color {
+    background-image: url(../images/background.jpg);
+    margin: 0 30px;
+    padding: 1em;
+}
+
+/*SIMBOLOS*/
+.flex-simbolos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.escudo-simb {
+    width: 50%;
+}
+
+.imagen-escudol h3,
+.imagen-banderal h3 {
+    text-align: center;
+}
+
+.imagen-escudol img {
+    width: 30%;
+    display: flex;
+    margin: 20px auto;
+}
+
+.bandera-simb {
+    width: 50%;
+}
+
+.imagen-banderal img {
+    width: 55%;
+    display: flex;
+    margin: 20px auto;
+}
+
+.texto-escudo1 p,
+.texto-bandera1 p {
+    margin: 0 50px;
+}
+
+
+/*MANUAL DE CONVIVENCIA*/
+.manual-convivencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5em
+
+}
+
+/*Pie de pagina*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: white;
+}
+
+.pie-pagina h1 {
+    text-align: justify;
+    margin-left: 70px;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pie-pagina .grupo-1 .box {
+    flex: 0 0 30%;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #13893C;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: rgb(87, 85, 85);
+    margin-bottom: 25px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.pie-pagina .grupo-1 .box p:hover,
+.pie-pagina .grupo-1 .box a:hover
+ {
+    color: #13893C;
+    font-weight: bold;
+}
+
+.pie-pagina .grupo-1 .box a {
+    color: rgb(87, 85, 85);
+    display: flex;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.titulo-imagen {
+    width: 100px;
+    /* ajusta el tamaño según tus necesidades */
+    display: block;
+    margin: 0 auto;
+    /* centra horizontalmente la imagen */
+}
+
+
+/* Define la animación de rebote */
+@keyframes rebote {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+}
+
+.linea-horizontal {
+    border: none;
+    border-top: 1px solid rgb(158, 151, 151);
+    width: 90%;
+    margin: 20px 75px;
+
+}
+
+.box-contactos {
+    text-decoration: none;
+    display: flex;
+    color: rgb(87, 85, 85);
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-final {
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.footer-final a:hover {
+    color: #13893C;
+    scale: 1.1em;
+
+}
+
+/* Estilos para pantallas más pequeñas ( móviles) */
+@media screen and (max-width: 768px) {
+    .escudo {
+        display: none;
+    }
+    
+    .encabezado h1{
+        display: none;/*oculte el titulo*/
+    }
+
+    .titulo {
+        font-size: 30px;
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        float: right;
+    }
+    .arriba-espacio{
+        margin-top: -60px;
+    }
+
+    .form1 {
+        margin-top: 40px;
+    }
+    .select {
+        padding: 5px 5px;
+        border-radius: 20px;
+        margin-top: 6px;
+    }
+
+    .sesion-titulo {
+        font-size: 20px;
+        padding: none;
+        margin-bottom: 160px;
+    }
+    .manual-convivencia{
+        margin-bottom: 80px;
+    }
+    .izq-menu{
+        margin-left: -10px;
+    }
+
+    .centrar-texto {
+        display: none;
+    }
+
+    .rector .columnas-rector {
+        display: block;
+    }
+
+    .texto-rector,
+    .imagen-rector {
+        display: flex;
+        margin: 0 auto;
+    }
+    .imagen-rector img,
+    .imagen-historia img{
+        width: 90%;
+    }
+
+    .texto-rector p {
+        padding: 0%;
+        margin-top: 5%;
+    }
+
+    .valores {
+        max-width: 100%;
+        margin-left: 10%;
+        display: block;
+    }
+
+    .valores .card {
+        max-width: 80%;
+        margin: 50px 0;
+    }
+
+    .valores .card .box .contentBx div p {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .valores .card .box .contentBx div {
+        max-width: 90%;
+        max-height: 90%;
+        padding: 0;
+        margin-top: 15px;
+    }
+
+    .valores .card .box .imgBx img {
+        max-width: 100%;
+        max-height: 350px;
+    }
+
+    .himno-font {
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .color {
+        padding: 0.5em;
+    }
+    .himno-font h2 {
+        margin-right: 20% !important;
+        text-align: left;
+    }
+    .titulo h2 {
+        margin-left: -400px;
+    }
+
+    .columna h6 {
+        display: block;
+        margin: 0 auto;
+    }
+
+    h6 {
+        text-align: center;
+    }
+
+    .columna p {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .imagen-himno img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .autor-himno p {
+        text-align: right;
+        font-size: 10px;
+        margin: 10px;
+    }
+
+    .himno-colombia .columna p {
+        font-size: 10px;
+    }
+    .flex-simbolos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Espacio entre el escudo y la bandera */
+        align-items: center; /* Centra los elementos horizontalmente */
+        gap: 20px; /* Espacio de 20 píxeles entre los elementos */
+    }
+    .imagen-vision img,
+    .imagen-mision img{
+        display: none;
+    }
+    .imagen-vision h3,
+    .imagen-mision h3{
+        font-weight: bold;
+        font-size: 40px;
+    }
+   .escudo-simb,
+   .bandera-simb{
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+   }
+   .escudo-simb:hover,
+   .bandera-simb:hover{
+    background-color: rgb(159, 158, 156);
+    background-image: none;
+   }
+   .mision-vision{
+    margin-top: -60px;
+   }
+
+    .manual-convivencia iframe {
+        max-width: 95%;
+        max-height: 70%;
+        position: absolute;
+        margin-top: -300px;
+    }
+
+    .espacio-manual {
+        margin-top: -300px;
+    }
+    .espacioproyecto{
+        margin-bottom: -300px;
+    }
+
+    .linea-horizontal {
+        width: 90%;
+        margin: 20px 20px;
+    }
+
+    .pie-pagina h1 {
+        text-align: center;
+        margin-left: 5px;
+        font-size: 16px;
+        margin-bottom: 15px;
+        padding: 2% 86px;
+    }
+
+    .pie-pagina .grupo-1 {
+        max-width: 100%;
+        display: flex;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .pie-pagina .grupo-1 .box {
+        flex: 0 0 30%;
+        max-width: 20%;
+        max-height: 20%;
+        margin-top: -20%;
+    }
+
+    .pie-pagina .grupo-1 .box lord-icon {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .pie-pagina .grupo-1 .box h2 {
+        margin-bottom: 5px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .pie-pagina .grupo-1 .box p {
+        margin-bottom: 10px;
+    }
+
+    .footer-final {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}

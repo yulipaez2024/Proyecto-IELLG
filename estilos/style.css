@@ -1,0 +1,944 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container_all {
+    position: relative;
+    right: 0;
+    transition: all 300ms;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    transition: all 300ms;
+}
+
+.move_content {
+    right: 180px;
+}
+.container__vectore img{
+    display: none;
+}
+.container__vecto img{
+    display: none;
+}
+
+
+.container__header {
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.container__nav {
+    position: relative;
+    height: 100%;
+}
+
+.nav .select {
+    color: white;
+}
+
+.select {
+    background: gray;
+    padding: 10px 30px;
+    color: yellow;
+    border-radius: 20px;
+}
+
+.btn__menu {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 300ms;
+    display: none;
+}
+
+.btn__menu:hover {
+    background: #f5f5f5;
+}
+
+/*COVER*/
+
+.cover {
+    width: 100%;
+    padding-bottom: 120px;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*WAVE INICIO*/
+
+.bg_color {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size:100% 100%;
+    animation: slider 15s linear infinite;
+    top: 0;
+    left: 0;
+}
+@keyframes slider {
+    0% { background-image: url(../images/fondo.jpg); }
+    30% { background-image: url(../images/sedes/llanitos1.jpg); }
+    60% { background-image: url(../images/sedes/llanitos2.jpeg); }
+    100% { background-image: url(../images/sedes/llanitos5.jpeg); }
+}
+
+.container__cover {
+text-align: center;
+    margin: auto;
+    padding: 20px;
+    
+    background-size: cover;
+    background-position: bottom;
+}
+
+.cover h1 {
+    font-size: 70px;
+    font-weight: 900;
+    color: #13893C;
+    text-align: center;
+    margin-top: -50px;
+    text-shadow: 
+        1px 1px 0 #090909, /* Sombra en la parte superior izquierda */
+        -1px -1px 0 #090909, /* Sombra en la parte inferior derecha */
+        1px -1px 0 #090909, /* Sombra en la parte inferior izquierda */
+        -1px 1px 0 #090909; /* Sombra en la parte superior derecha */
+}
+
+
+.container__info p {
+    margin-top: 10px;
+    color: #171616;
+    font-size: 40px;
+    text-align: center;
+    padding: 60px;
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.6); /* Gris con 50% de transparencia */
+}
+
+.container__vector {
+    position: relative;
+    margin-bottom: none;
+}
+
+.container__vector img {
+    position: absolute;
+    bottom: -20%;
+    right: -19em;
+    width: 1300px;
+    padding: 20px;
+}
+
+.asistencia-logeo {
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-top: -55px;
+    margin-left: 10px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+
+/*MENU*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu {
+    margin: 10px 0;
+}
+
+#header {
+    margin: auto;
+    width: 900px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.nav {
+    width: 800px;
+    /*Le establecemos un ancho*/
+    margin: 0 auto;
+    /*Centramos automaticamente*/
+}
+
+.nav>li {
+    float: left;
+}
+
+.nav .menu a {
+    background-color: none;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+    font-weight: bold;
+}
+
+.nav .menu a:hover {
+    border-bottom: 2px solid orange;
+    color: #c2bf22;
+}
+
+.nav .submenu,
+.nav .sub-sedes {
+    margin-top: 3px;
+}
+
+
+.nav .submenu a,
+.nav .sub-sedes a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+    font-weight: normal;
+}
+
+.nav .submenu a:hover,
+.nav .sub-sedes a:hover {
+    background-color: #FEBA0B;
+    color: #13893C;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover>ul {
+    display: block;
+}
+
+.nav li ul li {
+    position: relative;
+}
+
+.nav li ul li ul {
+    right: -140px;
+    top: 0px;
+}
+
+/*SESION PORQUE ELEGIRNOS*/
+.sesion-titulo {
+    margin-top: 50px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.caracteristicas {
+    width: 40%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.container .card {
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(224, 62, 62, 0.05),
+        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+        5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-image: url(../images/background.jpg);
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card .box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.container .card .box .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .box .content h1 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.02);
+    transition: 0.5s;
+}
+
+.container .card .box .content h2 {
+    font-size: 1.8em;
+    color: yellow;
+    z-index: 1;
+    transition: 0.4s;
+    margin-bottom: 10px;
+}
+
+.container .card .box .content p {
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.container .card:hover .box {
+    transform: translateY(-50px);
+    transition: 0.5S;
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.4);
+    background-image: url(../images/Citrus.jpg);
+}
+
+.container .card:hover .box .content h1 {
+    color: rgba(0, 0, 0, 0.05);
+}
+
+.container .card:hover .box .content h2 {
+    color: rgb(255, 255, 255);
+}
+
+.container .card:hover .box .content p {
+    color: rgb(255, 255, 255);
+}
+
+/* Estilos segunda sesion */
+.segunda_section {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.segunda_section h1 {
+    text-align: center;
+    color: #13893C;
+    font-weight: bold;
+    font-size: 70px;
+    animation-name: heartbeat;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.3);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(0.7);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.segunda_section h3 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* sesion 2 carrusel */
+.slider {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    animation: cambio 10s infinite alternate linear;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+.image-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.image-grid li {
+    margin: 20px;
+    position: relative;
+    background-color: rgb(204, 197, 197);
+    border-radius: 10px;
+}
+
+.image-grid img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    transition: transform 0.10s, border 0.10s;
+
+}
+
+.image-grid img:hover {
+    transform: scale(1.1);
+    border: 3px solid #FEBA0B;
+    opacity: 1;
+}
+
+.image-grid h3 {
+    margin-top: 20px;
+}
+
+.image-grid p {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
+    padding: 15px;
+}
+
+.slider li {
+    width: 300px;
+    height: 590px;
+    list-style: none;
+    flex: 0 0 30%;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgba(37, 50, 116, 0.8);
+}
+
+.slider img {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #f3f7f4;
+    z-index: -1;
+}
+
+.segunda_section img:hover+h3,
+.segunda_section h3:hover {
+    color: #FEBA0B;
+    transform: scale(1.1);
+    animation: none;
+}
+
+#mostrar {
+    position: relative;
+    height: 50px;
+    width: 250px;
+    background-color: #07535e;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    cursor: pointer;
+    border: 1px solid #07535e;
+    margin-top: 30px;
+    transition: 1s all;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#mostrar:hover {
+    transform: scale(1.1);
+    box-shadow: rgb(100, 100, 111, 0.2)0px 7px 29px 0px;
+    background-color: #c2bf22;
+}
+
+#mostrar::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    border: 1px solid red;
+    top: -4px;
+    left: 245px;
+    transition: 1s all;
+}
+
+#mostrar::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    border: 1px solid rgb(255, 230, 0);
+    top: -4px;
+    left: -4px;
+    transition: 1s all;
+}
+
+#mostrar:hover::after {
+    left: 245px;
+    animation: anime 1.5s infinite alternate;
+}
+
+#mostrar:hover::before {
+    animation: anime 1.5s infinite alternate;
+    left: -4px;
+}
+
+@keyframes anime {
+    from {
+        transform: scale(1);
+        border-color: #d3e71c;
+    }
+
+    to {
+        transform: scale(1);
+        border-color: #e76d1c;
+    }
+}
+
+/* @keyframes cambio ajustado para mostrar 3 imágenes a la vez */
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    33.33% {
+        margin-left: 0;
+    }
+
+    38.33% {
+        margin-left: -100%;
+    }
+
+    66.66% {
+        margin-left: -100%;
+    }
+
+    71.66% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
+}
+
+/* Detener animación en la imagen individual cuando se coloca el mouse sobre ella */
+.slider li:hover {
+    animation-play-state: paused;
+}
+
+/*SESION DE LA UBICACION*/
+/* Estilos para el contenedor principal */
+.sesion-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+
+.container__article {
+    max-width: 1000px;
+    padding: 0px 20px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container__article .box__article {
+    width: 200px;
+    height: 250px;
+    background: var(--color-esqueleto);
+    margin: 20px;
+}
+
+/*AQUI COMIENZA EL FOOTER*/
+/*:::::Pie de Pagina*/
+/*Pie de pagina*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: white;
+}
+
+.pie-pagina h1 {
+    text-align: justify;
+    margin-left: 70px;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pie-pagina .grupo-1 .box {
+    flex: 0 0 30%;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #13893C;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+.footer-final{
+    color: #171616 !important;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: rgb(87, 85, 85);
+    margin-bottom: 25px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+}
+
+.pie-pagina .grupo-1 .box p:hover {
+    color: #13893C;
+    font-weight: bold;
+}
+
+.pie-pagina .grupo-1 .box a {
+    color: rgb(87, 85, 85);
+    display: flex;
+    padding: 10px;
+}
+.pie-pagina .grupo-1 .box a:hover {
+    color: #13893C;
+    font-weight: bold;
+}
+
+.titulo-imagen {
+    width: 100px;
+    /* ajusta el tamaño según tus necesidades */
+    display: block;
+    margin: 0 auto;
+    /* centra horizontalmente la imagen */
+}
+
+
+/* Define la animación de rebote */
+@keyframes rebote {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+}
+
+.linea-horizontal {
+    border: none;
+    border-top: 1px solid rgb(170, 167, 167);
+    width: 95%;
+    margin: 20px 20px;
+
+}
+.pie-pagina .titulo{
+    color: #171616;
+    font-size: 40px;
+}
+
+.box-contactos {
+    text-decoration: none;
+    color: rgb(87, 85, 85);
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-final {
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+
+.footer-final a:hover {
+    color: #13893C;
+    scale: 1.1em;
+
+}
+
+/* Estilos para pantallas más pequeñas ( móviles) */
+@media (max-width: 768px) {
+    /*menu*/
+    header{
+        position:absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        width: 30px;
+       
+    }
+    .nav{
+        width: 80px;
+        height: 335px;
+        position: absolute;
+        left: 80px;
+        top: 30px;
+        background-color: #0b1333;
+        font-size: 5px;
+    }
+    .nav .submenu{
+        left: 78px;
+        bottom: 50px;
+    }
+  
+    .nav .sub-sedes {
+        left: 78px;
+        bottom: 110px;
+    }
+    .nav .estudiantess{
+        left: 78px;
+        bottom: 80px;
+    }
+    
+    .nav .submenu a,
+    .nav .sub-sedes a {
+        background-color: #0b1333 !important;
+        color: #f3f7f4;
+        width: 70px;
+        font-size: 5px;
+    }
+    .select {
+        all: unset; /* Elimina todos los estilos heredados */
+        /* Alternativamente, puedes usar reglas individuales para restablecer el estilo según sea necesario */
+        font-size: inherit !important;
+        margin: 0 !important;
+        /* Añade cualquier otra propiedad que necesites restablecer */
+    }
+
+    .container__cover {
+       height: 700px;
+    }
+    .container__vecto img {
+        width: 160%;
+        height: auto;
+        margin: 0 -25%;
+        display: block;
+    }
+    .container__info p {
+        text-align: center;
+        padding: 25px;
+    }
+   
+    .container__vectore img{
+        width: 35px;
+        height: auto;
+        display:block;
+        left: 0%;
+        top: 10px;
+
+    }
+
+    .container__vector img {
+        display:none;
+    }
+    /*slider de noticias*/
+    .slider{
+        overflow: scroll;
+        scroll-snap-type: x mandatory;
+    }
+    .slider ul li{
+        object-fit: cover;
+        scroll-snap-align: center;
+    }
+
+    .asistencia-logeo {
+    margin-top: -40px;
+    margin-right: -5px;
+    }
+    .icono-menu{
+        width: 20%;
+        height: 20%;
+    }
+
+    .cover h1 {
+        font-size: 30px;
+        margin-top: -80px;
+    }
+
+    .cover h2 {
+        font-size: 30px;
+        top: 1px;
+    }
+
+    .cover p {
+        font-size: 15px;
+    }
+
+    .bg_color {
+        max-height: 80%;
+    }
+
+    .elegirnos {
+        margin-top: -30%;
+    }
+
+    .slider ul {
+        width: 300%;
+        animation: none;
+    }
+
+    .slider li {
+        height: 450px;
+    }
+
+    .slider ul p {
+        font-size: 15px;
+    }
+
+    .image-grid img {
+        max-width: 170px;
+        max-height: 170px;
+    }
+
+    .custom-container iframe {
+        max-width: 90%;
+    }
+   
+    .linea-horizontal {
+        width: 90%;
+    }
+
+    .pie-pagina h1 {
+        text-align: center;
+        margin-left: 5%;
+        font-size: 16px;
+        margin-bottom: 15px;
+        padding: 2%;
+    }
+
+    .pie-pagina .grupo-1 {
+        max-width: 100%;
+        display: flex;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .pie-pagina .grupo-1 .box {
+        flex: 0 0 30%;
+        max-width: 20%;
+        max-height: 20%;
+        margin-top: -20%;
+    }
+
+    .pie-pagina .grupo-1 .box lord-icon {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .pie-pagina .grupo-1 .box h2 {
+        margin-bottom: 5px;
+        font-size: 15px;
+        margin-top: 5px;
+        padding: 5px;
+    }
+
+    .pie-pagina .grupo-1 .box p {
+        margin-bottom: 10px;
+    }
+
+    .footer-final {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}

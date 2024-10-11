@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="estilos/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://tresplazas.com/web/img/big_punto_de_venta.png">
+    <link rel="icon" href="img/1.png">
+    <title>Inicio de sesión</title>
+</head>
+
+<body>
+    <img class="wave" src="img/fondo.png">
+    <div class="container">
+        <div class="img">
+            <img src="img/asistencia.png">
+        </div>
+        <div class="login-content">
+            <form method="post" action="php/inicio.php" onsubmit="return validarFormulario()">
+                <img src="img/avatar.png">
+                <h2 class="title">BIENVENIDO</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <input id="usuario" type="text" class="input" name="usuario" placeholder="correo">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <input type="password" id="input" class="input" name="password" placeholder="Contraseña">
+                    </div>
+                </div>
+                <div class="view">
+                    <div onclick="togglePasswordVisibility()" id="verPassword"></div>
+                </div>
+
+                <div class="text-center">
+                    <a class="font-italic isai5" href="contrasena.html">Olvidé mi contraseña</a>
+                </div>
+                <input name="btningresar" class="btn" type="submit" value="INICIAR SESION">
+            </form>
+        </div>
+    </div>
+    <!-- Agrega el siguiente enlace para Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="js/main.js"></script> <!-- Asegúrate de que el archivo main.js contenga la función togglePasswordVisibility() -->
+</body>
+
+</html>

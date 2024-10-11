@@ -1,0 +1,179 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/css.css">
+    <link rel="icon" href="../../images/1.png">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <title>Cursos</title>
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../../images/institucion.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name"></span>
+                    <span class="profession">IELLG</span>
+                </div>
+            </div>
+
+            <i class='bx bx-menu toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Buscar...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../inicio.html">
+                            <i class='bx bx-grid-alt icon'></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="estudiantes.html">
+                            <i class='bx bxs-graduation icon'></i>
+                            <span class="text nav-text">Estudiantes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a class="select" href="cursos.html">
+                            <i class='bx bx-folder-open icon inicio'></i>
+                            <span class="text nav-text">Cursos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="asistencia.php">
+                            <i class='bx bx-pie-chart-alt icon'></i>
+                            <span class="text nav-text">Asistencia</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="reporte.php">
+                            <i class='bx bxs-file-doc icon'></i>
+                            <span class="text nav-text">Reporte general</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#" onclick="confirmLogout()">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Cerrar Sesión</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Modo oscuro</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
+    </nav>
+    <section class="home-estudiantes">
+
+        <div class="inicio">
+            <h1>Cursos </h1>
+        </div>
+
+        <div class="menu-estudiantes">
+            <button id="agregar-btn"><i class="fas fa-plus espacio"></i> Agregar curso</button>
+            <button id="actualizar-btn"><i class="fas fa-sync-alt espacio"></i> Actualizar curso</button>
+            <button id="eliminar-btn"><i class="fas fa-trash espacio"></i> Eliminar curso</button>
+        </div>
+        
+        <div class="formulario-agregar">
+            <form id="formulario-agregar" action="../php/registrarcurso.php" role="form" method="POST"
+                onsubmit="return validarFormulario_cursoagregar()">
+                <div class="text-form">
+                    <h3>Ingresa el curso a registrar:</h3>
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-id-card"></i>
+                    <input type="text" id="id_curso" name="id_curso" placeholder="Ingresar id del curso">
+                </div>
+                <div class="input-container">
+                    <i class='bx bx-food-menu'></i>
+                    <input type="text" id="nombre_curso" name="nombre_curso"
+                        placeholder="Ingresar nombre del curso académico">
+                </div>
+                <div>
+                    <button name="btnagregarcurso" type="submit"> <i class="fas fa-plus espacio"></i>Agregar curso</button>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="formulario-actualizar">
+            <form id="formulario-actualizar" action="../php/actualizarurso.php" role="form" method="POST"
+                onsubmit="return validarFormulario_cursoactualizar()">
+                <div class="text-form">
+                    <h3>Ingresa el curso a actualizar:</h3>
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-id-card"></i>
+                    <input type="text" id="id_curso" name="id_curso" placeholder="Ingresar el id del curso">
+                </div>
+                <div class="input-container">
+                    <i class='bx bx-food-menu'></i>
+                    <input type="text" id="nombre_curso" name="nombre_curso"
+                        placeholder="Ingresar nombre del curso académico">
+                </div>
+                <div>
+                    <button name="btnactualizarcurso" type="submit" id="actualizar"><i class="fas fa-sync-alt espacio"></i>Actualizar curso</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="formulario-eliminar">
+            <form id="formulario-eliminar" action="../php/eliminarcurso.php" role="form" method="POST"
+                onsubmit="return validarFormulario_cursoeliminar()">
+                <div class="text-form">
+                    <h3>Ingresa el id del curso a eliminar:</h3>
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-id-card"></i>
+                    <input type="text" id="id_curso" name="id_curso" placeholder="Ingresar id del curso a eliminar">
+                </div>
+                <div>
+                    <button name="btneiminarcurso" type="submit" id="eliminar"><i class="fas fa-trash espacio"></i> Eliminar
+                        curso</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <script src="../js/validaciones.js"></script>
+</body>
+
+</html>

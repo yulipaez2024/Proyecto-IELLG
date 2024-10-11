@@ -1,0 +1,34 @@
+
+  .botones-asistencia {
+    text-align: center; /* Centrar los botones horizontalmente */
+    margin-top: 20px; /* Espacio superior para separarlos del contenido */
+}
+
+.boton-cancelar {
+    background-color: red; /* Color de fondo rojo */
+    color: white; /* Color del texto blanco */
+    padding: 10px 40px; /* Añadir espaciado interno */
+    border: none; /* Quitar borde */
+    border-radius: 5px; /* Añadir bordes redondeados */
+    margin-right: 10px; /* Espacio entre botones */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.boton-guardar {
+    background-color: green; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 10px 40px; /* Añadir espaciado interno */
+    border: none; /* Quitar borde */
+    border-radius: 5px; /* Añadir bordes redondeados */
+    cursor: pointer;
+}
+/* Estilos al pasar el mouse sobre los botones */
+.boton-cancelar:hover{
+    color: black; 
+    background-color: rgb(219, 110, 46);
+}
+.boton-guardar:hover {
+    color: black; 
+    background-color: rgb(78, 185, 126);
+}

@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Color del fondo*/
+body {
+    background: #f6f7f6;
+}
+
+/*Encabezado*/
+.encabezado h1 {
+    text-align: center;
+    font-family: Abril Fatface;
+    font-size: 60px;
+    font-weight: bold;
+    color: #e49d22;
+    margin-bottom: 20px;
+}
+.container__vectore img,
+.container__vectors img{
+    display: none;
+}
+
+.encabezado {
+    background-color: #13893C;
+    padding: 50px;
+}
+
+.escudo {
+    float: left;
+    /* Permite que la imagen se posicione a la izquierda */
+    background-position: 20px 20px;
+    padding-left: 50px;
+    padding-top: 20px;
+    width: 200px;
+    height: 190px;
+    margin-top: -15em;
+    margin-left: -20px;
+    position:absolute;
+    z-index: 999;
+}
+
+.titulo a {
+    display: block;
+    font-family: Abril Fatface;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.sesion-titulo {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #13893C;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+/* PERFIL ESTUDIANTE */
+.margin-radium {
+    margin-top: -10em;
+}
+.margin-radium img{
+    margin: 70px 320px;
+    width: 50%;
+}
+.profile-text h5{
+    margin-left: 10em;
+    font-weight: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+/* Estilos de la tabla */
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    background-color: #f2f2f2;
+}
+.profile-text table{
+    margin-left: 12em;
+}
+
+.numero {
+    text-align: right;
+    padding-right: 10px;
+    background-color: #cccccc;
+    border: 1px solid #000; 
+}
+
+.caracteristica {
+    padding-left: 10px;
+    background-color: #ffffff;
+    border: 1px solid #000; 
+    word-wrap: break-word;
+}
+
+tr:nth-child(odd) {
+    background-color: #e6e6e6;
+}
+
+tr {
+    border: 2px solid #292625; 
+}
+
+td {
+    border: 1px solid #252729; 
+}
+/*MATRICULA*/
+.p-matricula div{
+    padding: 20px;
+}
+.requisitos h5{
+    text-align: center;
+    font-weight: normal;
+}
+.requisitos h6{
+    font-weight: bold;
+    font-style: italic;
+}
+.requisitos p{
+    margin-left: 30px;
+}
+.requisitos{
+    margin-left: 15px;
+}
+
+/*HORARIOS*/
+.horarios{
+    padding: 0 5em;
+}
+.horario-imagen img{
+    width: 30%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+}
+/*UNIFORMES*/
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #7a7a7a;
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 410px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 25px;
+	color: #7a7a7a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+
+
+/*Pie de pagina*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: white;
+}
+
+.pie-pagina h1 {
+    text-align: justify;
+    margin-left: 70px;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pie-pagina .grupo-1 .box {
+    flex: 0 0 30%;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #13893C;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: rgb(87, 85, 85);
+    margin-bottom: 25px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.pie-pagina .grupo-1 .box p:hover,
+.pie-pagina .grupo-1 .box a:hover
+ {
+    color: #13893C;
+    font-weight: bold;
+}
+
+.pie-pagina .grupo-1 .box a {
+    color: rgb(87, 85, 85);
+    display: flex;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.titulo-imagen {
+    width: 100px;
+    /* ajusta el tamaño según tus necesidades */
+    display: block;
+    margin: 0 auto;
+    /* centra horizontalmente la imagen */
+}
+
+
+/* Define la animación de rebote */
+@keyframes rebote {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+}
+
+.linea-horizontal {
+    border: none;
+    border-top: 1px solid rgb(158, 151, 151);
+    width: 90%;
+    margin: 20px 75px;
+
+}
+
+.box-contactos {
+    text-decoration: none;
+    display: flex;
+    color: rgb(87, 85, 85);
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-final {
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.footer-final a:hover {
+    color: #13893C;
+    scale: 1.1em;
+
+}
+
+/* Estilos para pantallas más pequeñas ( móviles) */
+@media screen and (max-width: 768px) {
+    .escudo {
+        display: none;
+    }
+    .encabezado {
+        padding: 40px;
+    }
+    .encabezado h1{
+        display: none;/*oculte el titulo*/
+    }
+
+    .titulo {
+        font-size: 30px;
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        float: right;
+    }
+
+    .asistencia-logeo {
+        min-width: 1em;
+        height: auto;
+        margin-top: -140px;
+        margin-right: 325px;
+        }
+    .container__vectore img{
+        width: 8%;
+        height: auto;
+        left: 20px;
+        margin-top: -54px;
+        display: block;
+        position: absolute;
+    }
+    .select {
+        padding: 5px 5px;
+        border-radius: 20px;
+        margin-top: 6px;
+    }
+    .sesion-titulo {
+        font-size: 20px;
+    }
+    .margin-radium {
+        position: relative;
+    }
+    
+    .margin-radium img {
+        width: 100%;
+        margin: 25% 5%;
+    }
+    .profile-text h5{
+        margin-left: 5%;
+        margin-top: -15%;
+        font-size: 15px;
+    }
+    table {
+        max-width: 100%;
+    }
+    .card:hover{
+        box-shadow:0px 1px 10px rgba(29, 141, 29, 0.9);
+    }
+    .profile-text table{
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
+    .horarios{
+        padding: 0 3%;
+    }
+
+    .linea-horizontal {
+        width: 90%;
+        margin: 20px 20px;
+    }
+    .pie-pagina h1 {
+        text-align: center;
+        margin-left: 5px;
+        font-size: 16px;
+        margin-bottom: 15px;
+        padding: 2% 86px;
+    }
+
+    .pie-pagina .grupo-1 {
+        max-width: 100%;
+        display: flex;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .pie-pagina .grupo-1 .box {
+        flex: 0 0 30%;
+        max-width: 20%;
+        max-height: 20%;
+        margin-top: -20%;
+    }
+
+    .pie-pagina .grupo-1 .box lord-icon {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .pie-pagina .grupo-1 .box h2 {
+        margin-bottom: 5px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .pie-pagina .grupo-1 .box p {
+        margin-bottom: 10px;
+    }
+
+    .footer-final {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
